@@ -106,6 +106,17 @@ Content:
   - Simple organization-focused attendance workflow.
   - Clear verified/unverified attendance states.
 
+#### How it works?
+
+Purpose:
+A brief explanation on how the system works
+
+Content:
+- A step-by-step on how a the systems works:
+    - 1st step is to take picture on the camera.
+    - 2nd step is to take select wether clocking in or out.
+    - last step is to submit your attendance.
+
 #### Organizations Using
 
 Purpose:

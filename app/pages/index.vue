@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import icsLogo from "~/assets/img/orgs/ics-logo.jpeg";
+
 const capabilities = [
   {
     title: "Fast clock-in and clock-out",
@@ -23,6 +25,31 @@ const capabilities = [
     description:
       "Clear verified and unverified attendance states help admins review records quickly.",
     icon: "i-lucide-badge-check",
+  },
+];
+
+const steps = [
+  {
+    title: "Take a picture",
+    description: "The employee starts by taking a face photo at the attendance camera.",
+    icon: "i-lucide-camera",
+  },
+  {
+    title: "Choose clock in or out",
+    description: "They select whether they are starting or ending their work period.",
+    icon: "i-lucide-log-in",
+  },
+  {
+    title: "Submit attendance",
+    description: "PETER records the attendance attempt with a clear verified or unverified state.",
+    icon: "i-lucide-send",
+  },
+];
+
+const organizations = [
+  {
+    name: "Immaculate Conception Seminary",
+    logo: icsLogo,
   },
 ];
 </script>
@@ -59,7 +86,7 @@ const capabilities = [
             <UButton
               size="xl"
               label="How it works"
-              to="#about"
+              to="#how-it-works"
               color="neutral"
               variant="subtle"
               trailing-icon="i-lucide-arrow-down"
@@ -126,6 +153,63 @@ const capabilities = [
           }"
         />
       </UPageGrid>
+    </UPageSection>
+
+    <UPageSection
+      id="how-it-works"
+      title="How it works"
+      description="A simple three-step flow for submitting attendance without making the experience feel intimidating."
+      :ui="{ root: 'py-16 sm:py-20 bg-muted/35', title: 'font-display font-normal tracking-[-0.02em]' }"
+    >
+      <div class="grid gap-4 lg:grid-cols-3">
+        <UCard
+          v-for="(step, index) in steps"
+          :key="step.title"
+          :ui="{ root: 'bg-elevated ring ring-muted shadow-lg shadow-default/5' }"
+        >
+          <div class="flex items-start gap-4">
+            <div class="grid size-12 shrink-0 place-items-center rounded-2xl bg-accented text-primary ring ring-muted">
+              <UIcon :name="step.icon" class="size-6" />
+            </div>
+            <div>
+              <p class="font-display text-xs text-primary">Step {{ index + 1 }}</p>
+              <h3 class="mt-2 font-display text-base font-normal text-highlighted">
+                {{ step.title }}
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-toned">
+                {{ step.description }}
+              </p>
+            </div>
+          </div>
+        </UCard>
+      </div>
+    </UPageSection>
+
+    <UPageSection
+      id="organizations"
+      title="Organizations Using PETER"
+      description="PETER is currently used by Immaculate Conception Seminary as a pilot client."
+      :ui="{ root: 'py-16 sm:py-20', title: 'font-display font-normal tracking-[-0.02em]' }"
+    >
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <UCard
+          v-for="organization in organizations"
+          :key="organization.name"
+          :ui="{ root: 'bg-elevated ring ring-muted shadow-lg shadow-default/5' }"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              :src="organization.logo"
+              :alt="`${organization.name} logo`"
+              class="size-16 rounded-2xl bg-default object-contain p-2 ring ring-muted"
+            >
+            <div>
+              <p class="font-display text-sm text-highlighted">{{ organization.name }}</p>
+              <p class="mt-1 text-sm text-muted">Pilot user</p>
+            </div>
+          </div>
+        </UCard>
+      </div>
     </UPageSection>
 
     <UPageCTA
