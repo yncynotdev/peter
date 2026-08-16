@@ -5,25 +5,25 @@ const capabilities = [
   {
     title: "Fast clock-in and clock-out",
     description:
-      "Employees get a clear, low-friction attendance flow that works without making the moment feel heavy.",
+      "A straightforward attendance flow that lets employees clock in and out with minimal steps.",
     icon: "i-lucide-timer-reset",
   },
   {
     title: "Face-detection check",
     description:
-      "PETER captures a face at attendance time to reduce buddy-punching and other attendance cheating.",
+      "A face check helps verify who is clocking in and reduces buddy-punching and other attendance fraud.",
     icon: "i-lucide-scan-face",
   },
   {
     title: "Organization workflow",
     description:
-      "A simple structure for teams that need reliable attendance records without a complicated system.",
+      "Attendance records are organized around the schedules, members, and workflows of each organization.",
     icon: "i-lucide-building-2",
   },
   {
     title: "Verified states",
     description:
-      "Clear verified and unverified attendance states help admins review records quickly.",
+      "Clear attendance statuses make it easier for administrators to review and manage records.",
     icon: "i-lucide-badge-check",
   },
 ];
@@ -31,17 +31,17 @@ const capabilities = [
 const steps = [
   {
     title: "Take a picture",
-    description: "The employee starts by taking a face photo at the attendance camera.",
+    description: "The employee takes a face photo using the attendance camera.",
     icon: "i-lucide-camera",
   },
   {
     title: "Choose clock in or out",
-    description: "They select whether they are starting or ending their work period.",
+    description: "They choose whether they are clocking in or clocking out.",
     icon: "i-lucide-log-in",
   },
   {
     title: "Submit attendance",
-    description: "PETER records the attendance attempt with a clear verified or unverified state.",
+    description: "PETER records the attendance and marks whether the attempt was verified.",
     icon: "i-lucide-send",
   },
 ];
@@ -50,6 +50,35 @@ const organizations = [
   {
     name: "Immaculate Conception Seminary",
     logo: icsLogo,
+  },
+];
+
+const techstack = [
+  {
+    name: "Nuxt",
+    icon: "simple-icons:nuxt",
+    description: "A full-stack Vue framework for building fast, modern web applications.",
+  },
+  {
+    name: "Hono",
+    icon: "simple-icons:hono",
+    description: "A lightweight web framework built for fast APIs across modern runtimes.",
+  },
+  {
+    name: "TypeScript",
+    icon: "simple-icons:typescript",
+    description: "Strongly typed JavaScript for reliable and maintainable applications.",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "simple-icons:postgresql",
+    description:
+      "A powerful relational database for storing PETER's attendance and organizational data.",
+  },
+  {
+    name: "Cloudflare",
+    icon: "simple-icons:cloudflare",
+    description: "Global infrastructure for running PETER close to the organizations it serves.",
   },
 ];
 </script>
@@ -72,8 +101,8 @@ const organizations = [
             Modern, friendly attendance with face detection.
           </h1>
           <p class="mt-7 max-w-2xl text-lg leading-8 text-toned sm:text-xl">
-            PETER helps teams clock in and out faster while capturing faces only to prevent
-            attendance cheating. It does not store biometrics.
+            PETER simplifies attendance with fast, reliable clock-ins and clock-outs using
+            face-based verification — without storing biometric data.
           </p>
           <div class="mt-9 flex flex-col gap-3 sm:flex-row">
             <UButton
@@ -138,7 +167,7 @@ const organizations = [
     <UPageSection
       id="about"
       title="Attendance that feels simple, not intimidating."
-      description="PETER helps organizations run attendance faster while reducing buddy-punching and other attendance cheating. Faces are captured for attendance verification only, and PETER does not store biometric data."
+      description="PETER helps organizations manage clock-ins, clock-outs, and attendance records while reducing buddy-punching. Face detection is used for attendance verification, and biometric data is not stored."
       :ui="{ root: 'py-20 sm:py-24', title: 'font-display font-normal tracking-[-0.02em]' }"
     >
       <UPageGrid>
@@ -158,8 +187,11 @@ const organizations = [
     <UPageSection
       id="how-it-works"
       title="How it works"
-      description="A simple three-step flow for submitting attendance without making the experience feel intimidating."
-      :ui="{ root: 'py-16 sm:py-20 bg-muted/35', title: 'font-display font-normal tracking-[-0.02em]' }"
+      description="A simple three-step process for recording attendance."
+      :ui="{
+        root: 'py-16 sm:py-20 bg-muted/35',
+        title: 'font-display font-normal tracking-[-0.02em]',
+      }"
     >
       <div class="grid gap-4 lg:grid-cols-3">
         <UCard
@@ -168,7 +200,9 @@ const organizations = [
           :ui="{ root: 'bg-elevated ring ring-muted shadow-lg shadow-default/5' }"
         >
           <div class="flex items-start gap-4">
-            <div class="grid size-12 shrink-0 place-items-center rounded-2xl bg-accented text-primary ring ring-muted">
+            <div
+              class="grid size-12 shrink-0 place-items-center rounded-2xl bg-accented text-primary ring ring-muted"
+            >
               <UIcon :name="step.icon" class="size-6" />
             </div>
             <div>
@@ -188,7 +222,7 @@ const organizations = [
     <UPageSection
       id="organizations"
       title="Organizations Using PETER"
-      description="PETER is currently used by Immaculate Conception Seminary as a pilot client."
+      description="PETER is currently being used by organizations to manage attendance."
       :ui="{ root: 'py-16 sm:py-20', title: 'font-display font-normal tracking-[-0.02em]' }"
     >
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -202,19 +236,45 @@ const organizations = [
               :src="organization.logo"
               :alt="`${organization.name} logo`"
               class="size-16 rounded-2xl bg-default object-contain p-2 ring ring-muted"
-            >
+            />
             <div>
               <p class="font-display text-sm text-highlighted">{{ organization.name }}</p>
-              <p class="mt-1 text-sm text-muted">Pilot user</p>
             </div>
           </div>
         </UCard>
       </div>
     </UPageSection>
 
+    <UPageSection
+      id="powered-by"
+      title="Powered by"
+      description="Built with modern technologies and infrastructure."
+      :ui="{ root: 'py-16 sm:py-20', title: 'font-display font-normal tracking-[-0.02em]' }"
+    >
+      <UPageGrid>
+        <UCard
+          v-for="stack in techstack"
+          :key="stack.name"
+          :ui="{ root: 'bg-elevated ring ring-muted shadow-lg shadow-default/5' }"
+        >
+          <div class="flex items-center gap-4">
+            <UIcon
+              :name="stack.icon"
+              :alt="`${stack.name} logo`"
+              class="size-16 rounded-2xl object-contain p-2"
+            />
+            <div>
+              <p class="font-display text-sm text-highlighted">{{ stack.name }}</p>
+              <p class="mt-1 text-sm text-muted">{{ stack.description }}</p>
+            </div>
+          </div>
+        </UCard>
+      </UPageGrid>
+    </UPageSection>
+
     <UPageCTA
-      title="Ready for a friendlier attendance workflow?"
-      description="Try the demo and see the clock-in flow without biometric storage claims or surveillance-heavy language."
+      title="See PETER in action"
+      description="Explore the demo and see how PETER handles the attendance workflow."
       :links="[
         {
           label: 'Open demo',
