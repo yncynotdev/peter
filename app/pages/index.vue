@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import icsLogo from "~/assets/img/orgs/ics-logo.jpeg";
 
+const runtimeConfig = useRuntimeConfig();
+const demoUrl = runtimeConfig.public.demoUrl;
+
 const capabilities = [
   {
     title: "Fast clock-in and clock-out",
@@ -108,7 +111,7 @@ const techstack = [
             <UButton
               size="xl"
               label="Open demo"
-              to="https://example.com"
+              :to="demoUrl"
               target="_blank"
               trailing-icon="i-lucide-external-link"
             />
@@ -278,7 +281,7 @@ const techstack = [
       :links="[
         {
           label: 'Open demo',
-          to: 'https://example.com',
+          to: demoUrl,
           target: '_blank',
           trailingIcon: 'i-lucide-external-link',
         },
