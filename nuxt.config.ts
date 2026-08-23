@@ -11,4 +11,10 @@ export default defineNuxtConfig({
       demoUrl: import.meta.env.NUXT_DEMO_URL,
     },
   },
+
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
+    },
+  },
 });
