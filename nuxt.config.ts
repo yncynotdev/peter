@@ -16,5 +16,6 @@ export default defineNuxtConfig({
     prerender: {
       autoSubfolderIndex: false,
     },
+    preset: "cloudflare_pages",
   },
 });
