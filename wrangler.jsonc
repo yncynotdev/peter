@@ -2,8 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   // Top-level configuration
   "name": "peter",
-  "main": "./output/server/index.mjs",
-  // "pages_build_output_dir": "./dist",
+  "pages_build_output_dir": "./dist",
   // Set this to today's date
   "compatibility_date": "2026-08-22",
   "observability": {
