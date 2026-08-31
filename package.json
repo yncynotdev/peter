@@ -8,8 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "cf_pages_build": " npx nuxi build --preset=cloudflare_pages ",
-    "cf_pages_deploy": "pnpm wrangler pages deploy"
+    "deploy": "pnpm wrangler pages deploy"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.17.0",
