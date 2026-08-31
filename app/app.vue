@@ -11,7 +11,7 @@ const navigation = [
 
 <template>
   <UApp>
-    <UHeader :ui="{ root: 'bg-default/85 backdrop-blur border-muted' }">
+    <UHeader :ui="{ root: 'bg-elevated backdrop-blur border-muted' }">
       <template #title>
         <div class="flex flew-row items-center">
           <UColorModeImage
@@ -44,16 +44,12 @@ const navigation = [
       </template>
     </UHeader>
 
-    <UMain>
-      <NuxtPage />
+    <UMain class="flex-1">
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </UMain>
 
-    <UFooter :ui="{ root: 'border-muted' }">
-      <template #left>
-        <p class="text-sm text-muted">
-          © {{ new Date().getFullYear() }} PETER. Attendance without biometric storage.
-        </p>
-      </template>
-    </UFooter>
+    <AppFooter />
   </UApp>
 </template>

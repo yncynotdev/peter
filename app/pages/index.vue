@@ -287,7 +287,7 @@ const techstack = [
         },
       ]"
       :ui="{
-        root: 'bg-elevated ring ring-muted',
+        root: 'bg-elevated/50 ring ring-muted',
         title: 'font-display font-normal tracking-[-0.02em]',
       }"
     />
