@@ -9,28 +9,47 @@ definePageMeta({
     <h1>Privacy Policy</h1>
     <p><strong>Effective Date:</strong> August 31, 2026</p>
 
-    <p>
-      This Privacy Policy explains how PETER ("PETER", "we", "us", or "our") handles information in
-      connection with the PETER website, applications, demonstrations, and related services.
-    </p>
-    <p>
-      PETER is designed to provide organizations with attendance-management capabilities while
-      following a privacy-conscious approach to handling personal information.
-    </p>
+    <section>
+      <p>Welcome to PETER.</p>
+      <p>
+        PETER is an attendance management system designed to help organizations manage employee or
+        member attendance through streamlined clock-in and clock-out workflows, attendance records,
+        and face-based verification.
+      </p>
+      <p>
+        This Privacy Policy explains how PETER ("PETER", "we", "us", or "our") handles information
+        in connection with the PETER website, applications, demonstrations, and related services.
+      </p>
+      <p>
+        PETER is designed to provide organizations with attendance-management capabilities while
+        following a privacy-conscious approach to handling personal information.
+      </p>
+      <p>
+        "PETER" is the name of the software system and project described in this Privacy Policy; it
+        is not itself a separate legal entity. The Service is developed, owned, and operated by
+        <span class="placeholder">Isaac Yancy Paala</span>, operating under the developer name
+        <strong>yncynotdev</strong>. Throughout this Privacy Policy, references to "PETER," "we,"
+        "us," and "our" refer to <span class="placeholder">Isaac Yancy Paala</span> (yncynotdev) as
+        the developer and operator of the Service, unless the context clearly refers only to the
+        software system itself.
+      </p>
+    </section>
 
     <section>
       <h2>1. About PETER</h2>
       <p>
-        PETER is an actively developed attendance-management system intended to serve real
-        organizational needs.
+        PETER is an actively developed software system intended to provide practical attendance
+        solutions for organizations.
       </p>
       <p>
-        The system provides functionality such as clock-in and clock-out, attendance records,
-        organization workflows, and face-based verification.
+        PETER is not merely a personal or experimental project. It is designed and developed with
+        the intention of serving real organizations and their attendance-management needs. Features,
+        infrastructure, integrations, and supported deployment environments may continue to evolve
+        as the system is developed and deployed for different organizations.
       </p>
       <p>
-        PETER is designed with the goal of minimizing unnecessary collection and retention of
-        personal information.
+        PETER may be provided as a hosted service, organization-specific deployment, demonstration
+        environment, or other deployment arrangement depending on the organization's requirements.
       </p>
     </section>
 

@@ -24,6 +24,15 @@ definePageMeta({
         By accessing or using PETER, you agree to these Terms. If you do not agree with these Terms,
         please do not use the Service.
       </p>
+      <p>
+        "PETER" is the name of the software system and project described in these Terms; it is not
+        itself a separate legal entity. The Service is developed, owned, and operated by
+        <span class="placeholder">Isaac Yancy Paala</span>, operating under the developer name
+        <strong>yncynotdev</strong>. Throughout these Terms, references to "PETER," "we," "us," and
+        "our" refer to <span class="placeholder">Isaac Yancy Paala</span> (yncynotdev) as the
+        licensor and operator of the Service, unless the context clearly refers only to the software
+        system itself.
+      </p>
     </section>
 
     <section>

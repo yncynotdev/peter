@@ -1,18 +1,5 @@
 <script setup lang="ts">
-import type { NavigationMenuItem, FooterColumn } from "@nuxt/ui";
-
-const items: NavigationMenuItem[] = [
-  {
-    label: "Terms of Service",
-    to: "/policy/terms-of-service",
-    target: "_blank",
-  },
-  {
-    label: "Privacy Policy",
-    to: "/policy/privacy-policy",
-    target: "_blank",
-  },
-];
+import type { FooterColumn } from "@nuxt/ui";
 
 const columns: FooterColumn[] = [
   {
@@ -46,7 +33,9 @@ const columns: FooterColumn[] = [
     <UFooterColumns :columns="columns">
       <template #right>
         <p class="text-muted text-sm">
-          All Rights Reserved. © {{ new Date().getFullYear() }} PETER
+          All Rights Reserved. © {{ new Date().getFullYear() }} yncynotdev
+          <br />
+          PETER
         </p>
       </template>
     </UFooterColumns>
