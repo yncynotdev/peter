@@ -1,5 +1,5 @@
 {
-  "name": "peter",
+  "name": "peter-landing-page",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,11 +8,13 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "bun wrangler pages deploy"
+    "deploy": "pnpm wrangler pages deploy"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.17.0",
+    "@nuxt/image": "2.1.0",
     "@nuxt/ui": "^4.10.0",
+    "better-sqlite3": "^13.0.3",
     "nuxt": "^4.5.2",
     "simple-icons": "^16.28.0",
     "vue": "^3.5.41",
@@ -21,5 +23,11 @@
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.123",
     "wrangler": "^4.125.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "sqlite3"
+    ]
   }
 }
