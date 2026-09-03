@@ -130,6 +130,24 @@ definePageMeta({
         Specific terms regarding handover timing, maintenance scope, and subscription pricing may be
         further defined in a separate agreement between PETER and the organization.
       </p>
+      <h3>2.5 Out-of-Scope Requests and Changes</h3>
+      <p>
+        Any request to add, modify, or remove functionality beyond the business requirements covered
+        by the scope agreed upon for the down payment under Section 2.1 is considered an
+        out-of-scope request. This includes both entirely new features and changes to
+        already-delivered functionality.
+      </p>
+      <p>
+        Out-of-scope requests are not included in the original project cost and will be quoted and
+        charged separately, based on the complexity, size, and effort required to implement the
+        request. PETER will provide the organization with an estimate for any out-of-scope request
+        before beginning work on it, and work will not commence until the organization approves the
+        estimate.
+      </p>
+      <p>
+        Specific rates, quoting methods, and turnaround times for out-of-scope requests may be
+        further defined in a separate agreement between PETER and the organization.
+      </p>
     </section>
 
     <section>
