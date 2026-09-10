@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.123",
+    "@iconify-json/simple-icons": "^1.2.95",
     "wrangler": "^4.125.0"
   },
   "pnpm": {

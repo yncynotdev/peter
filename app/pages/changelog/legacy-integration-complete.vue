@@ -5,7 +5,9 @@ definePageMeta({
 </script>
 
 <template>
-  <UPageCard :ui="{ root: 'bg-elevated ring ring-muted shadow-lg shadow-default/5 p-7' }">
+  <UPageCard
+    :ui="{ root: 'bg-elevated ring ring-muted shadow-lg shadow-default/5 p-4 sm:p-4 md:p-7' }"
+  >
     <h1>PETER v0.9.4 — Legacy Integration Complete</h1>
     <p><strong>Beta Release</strong> · Internal</p>
 

@@ -1,6 +1,14 @@
 <script setup lang="ts">
 const items = ref([
   {
+    date: "September 10, 2026",
+    title: "Improve Infrastructure and Revamped Icon",
+    description:
+      " Improved PETER’s infrastructure with CI/CD, unit and E2E testing, and a more reliable development workflow, alongside minor fixes and refinements. ",
+    thumbnail: "/thumbnail/v0.9.5.png",
+    to: "/changelog/improve-infrastructure",
+  },
+  {
     date: "September 01, 2026",
     title: "Legacy Integration Complete",
     description:
