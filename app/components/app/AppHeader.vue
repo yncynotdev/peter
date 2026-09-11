@@ -13,7 +13,7 @@ const navigation = [
 <template>
   <UHeader :ui="{ root: 'bg-elevated backdrop-blur border-muted' }">
     <template #title>
-      <div class="flex flew-row items-center">
+      <div class="flex flew-row items-center gap-2.5">
         <NuxtImg src="/icon.png" class="size-7.5" />
 
         <NuxtLink to="/" class="font-display text-xl tracking-tight text-highlighted">
