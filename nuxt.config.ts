@@ -21,6 +21,10 @@ export default defineNuxtConfig({
             "PETER is a web-app camera-based attendance management system designed to simplify attendance tracking, prevent fraudulent clock-ins, and provide organizations with a reliable and modern attendance experience.",
         },
         {
+          name: "author",
+          content: "yncynotdev",
+        },
+        {
           property: "og:title",
           content: "PETER — Attendance Management System",
         },
@@ -31,7 +35,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://peter-app-cf.pages.dev/og-image.png",
+          content: "https://peter-app-cf.pages.dev/og-image.jpg",
         },
         {
           property: "og:type",
@@ -42,8 +46,12 @@ export default defineNuxtConfig({
           content: "https://peter-app-cf.pages.dev",
         },
         {
-          name: "author",
+          name: "og:author",
           content: "yncynotdev",
+        },
+        {
+          property: "article:published_time",
+          content: "2026-08-31T00:00:00+08:00",
         },
       ],
 
