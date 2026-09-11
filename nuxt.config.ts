@@ -8,6 +8,23 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      title: "PETER",
+
+      htmlAttrs: {
+        lang: "en",
+      },
+
+      meta: [
+        {
+          name: "description",
+          content: "A web camera-based attendance.",
+        },
+        {
+          name: "author",
+          content: "yncynotdev",
+        },
+      ],
+
       link: [
         {
           rel: "icon",
