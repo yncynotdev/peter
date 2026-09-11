@@ -46,7 +46,7 @@ export default defineNuxtConfig({
           content: "https://peter-app-cf.pages.dev",
         },
         {
-          name: "og:author",
+          property: "article:author",
           content: "yncynotdev",
         },
         {
