@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Marketing site for PETER, an Attendance Management System</strong>
+  <strong>Landing site for PETER, an Attendance Management System</strong>
 </p>
 
 <p align="center">
