@@ -69,12 +69,19 @@ Playwright — see [About PETER](#about-peter) above.)*
 
 ## 📄 License
 
-This **landing page repository** is licensed under the [MIT License](./LICENSE) —
-feel free to reuse or reference the code/design.
+This **landing page repository's code** (Nuxt/Vue components, TypeScript,
+config, and markup) is licensed under the [MIT License](./LICENSE) — feel
+free to reuse or reference it.
+
+**Exception:** The PETER icon/logo (`/public/icon-180x180.png` and any other
+brand assets in this repo) is **not** covered by the MIT license and remains
+© PETER. Please do not copy, reuse, or redistribute the icon/logo without
+permission.
 
 The PETER **application** itself remains proprietary software; source, usage,
 and deployment are governed by a separate agreement with the maintainer. MIT
-licensing here applies only to this landing page, not to PETER's core codebase.
+licensing here applies only to this landing page's code, not to PETER's core
+codebase or its branding.
 
 ---
 
