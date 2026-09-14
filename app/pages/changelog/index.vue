@@ -1,6 +1,14 @@
 <script setup lang="ts">
 const items = ref([
   {
+    date: "September 14, 2026",
+    title: "Attendance Calendar",
+    description:
+      "Introducing a calendar-based system for easily filtering and navigating attendance records.",
+    thumbnail: "/thumbnail/v0.9.6.png",
+    to: "/changelog/attendance-calendar",
+  },
+  {
     date: "September 10, 2026",
     title: "Improve Infrastructure and Revamped Icon",
     description:
@@ -22,17 +30,19 @@ const items = ref([
 <template>
   <UPage>
     <UPageHero
+      v-reveal
       title="Changelog"
       description="Follow the latest updates and improvements of PETER"
       :ui="{
-        title: 'font-display',
+        title: 'font-display font-normal',
       }"
     />
 
     <UPageBody :ui="{ base: 'mx-auto max-w-6xl px-6 py-16' }">
       <UTimeline
+        v-reveal
         :items="items"
-        :default-value="1"
+        :default-value="999"
         size="xs"
         :ui="{
           title: 'sm:text-md md:text-lg lg:text-xl font-display ',

@@ -5,9 +5,9 @@ const columns: FooterColumn[] = [
   {
     label: "Contents",
     children: [
-      { label: "About", to: "#about" },
-      { label: "How It Works?", to: "#how-it-works" },
-      { label: "Organizations", to: "#organizations" },
+      { label: "About", to: "/#about" },
+      { label: "How It Works?", to: "/#how-it-works" },
+      { label: "Organizations", to: "/#organizations" },
     ],
   },
   {

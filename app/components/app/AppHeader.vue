@@ -3,9 +3,8 @@ const runtimeConfig = useRuntimeConfig();
 const demoUrl = runtimeConfig.public.demoUrl;
 
 const navigation = [
-  { label: "About", to: "/#about" },
-  { label: "How It Works?", to: "/#how-it-works" },
-  { label: "Organizations", to: "/#organizations" },
+  { label: "Home", to: "/" },
+  // { label: "Contact", to: "#contact" },
   { label: "Changelog", to: "/changelog" },
 ];
 </script>
@@ -20,12 +19,26 @@ const navigation = [
           PETER
         </NuxtLink>
       </div>
+
+      <UBadge variant="subtle">v0.9.6</UBadge>
     </template>
 
     <UNavigationMenu :items="navigation" class="hidden md:flex" />
 
     <template #right>
       <UColorModeButton />
+
+      <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
+        <UButton
+          color="neutral"
+          variant="ghost"
+          to="https://github.com/yncynotdev/peter"
+          target="_blank"
+          icon="i-simple-icons-github"
+          aria-label="GitHub"
+        />
+      </UTooltip>
+
       <UButton
         label="Open demo"
         :to="demoUrl"

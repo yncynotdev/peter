@@ -1,5 +1,5 @@
 <script setup>
-import content from "./legacy-integration-complete.md?raw";
+import content from "./attendance-calendar.md?raw";
 
 definePageMeta({
   layout: "policy",
