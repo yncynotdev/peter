@@ -1,19 +1,23 @@
-# PETER
+# PETER — Landing Page
 
 <p align="center">
-  <img src="assets/peter-logo.svg" alt="PETER" width="180">
+  <img src="/public/icon-180x180.png" alt="PETER" >
 </p>
 
 <p align="center">
-  <strong>Attendance Management System</strong>
+  <strong>Marketing site for PETER, an Attendance Management System</strong>
 </p>
 
 <p align="center">
-  A modern attendance system built for reliable, camera-assisted attendance tracking.
+  This repository contains the public landing page for PETER — a camera-assisted
+  attendance system built for schools, seminaries, and organizations. The core
+  application is closed-source and maintained separately.
 </p>
 
 <p align="center">
-  <a href="#features">Features</a>
+  <a href="#about-peter">About PETER</a>
+  ·
+  <a href="#built-with">Built With</a>
   ·
   <a href="#status">Status</a>
   ·
@@ -22,128 +26,55 @@
 
 ---
 
-## ✨ Features
+## 📖 About PETER
 
-### 📸 Camera-Assisted Attendance
+PETER is an attendance management system that uses camera-assisted capture to
+help prevent proxy or fraudulent attendance, without storing biometric templates.
 
-Capture attendance through a camera-assisted workflow designed to help prevent proxy or fraudulent attendance.
+Highlights of the product:
 
-- Camera-based attendance capture
-- Attendance photo support
-- Image validation
-- Clock-in and clock-out tracking
-- No biometric template storage required
+- 📸 Camera-assisted clock-in / clock-out
+- 📅 Calendar-based attendance review and reporting
+- 👥 Flexible people management (students, employees, and other member types)
+- 🔐 Secure authentication and an administrative dashboard
+- ☁️ Runs on modern cloud infrastructure
 
-### 📅 Attendance Management
-
-Review and manage attendance records through a focused administrative interface.
-
-- Daily attendance records
-- Calendar-based date filtering
-- Attendance status tracking
-- Attendance summaries
-- Clock-in / clock-out history
-- Schedule-aware attendance handling
-
-### 👥 People Management
-
-Manage the people whose attendance is recorded by the system.
-
-- Student and employee records
-- Flexible member types
-- Account and profile management
-- Organization-specific terminology
-
-### 🔐 Authentication & Administration
-
-Provide administrators with the tools needed to manage the system securely.
-
-- User authentication
-- Administrative dashboard
-- Protected application areas
-- Administrative configuration
-
-### ☁️ Cloud Infrastructure
-
-Designed to run on modern cloud infrastructure.
-
-- Cloudflare Workers
-- Cloudflare Pages
-- Cloudflare R2
-- PostgreSQL-compatible databases
-
-### 🧪 Testing
-
-Attendance is a critical workflow, so automated testing is part of the project.
-
-- Unit tests
-- API validation tests
-- Authentication tests
-- Attendance clock-in/out tests
-- Timezone handling tests
-- End-to-end tests
+> This repo covers only the public-facing landing page. The PETER application
+> itself — including source code, infrastructure, and business logic — is
+> proprietary and not published here.
 
 ---
 
 ## 🛠️ Built With
 
+This landing page is built with:
+
 | Technology | Purpose |
 | --- | --- |
-| **Nuxt** | Web application |
-| **Nuxt UI** | User interface |
-| **Hono** | API / backend |
-| **TypeScript** | Application language |
-| **PostgreSQL** | Database |
-| **Better Auth** | Authentication |
-| **Cloudflare** | Hosting & infrastructure |
-| **Playwright** | End-to-end testing |
+| **Nuxt** | Site framework |
+| **Nuxt UI** | UI components |
+| **TypeScript** | Language |
+| **Cloudflare Pages** | Hosting |
 
----
-
-## 📸 How It Works
-
-```text
-┌──────────────┐
-│    Person    │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────────┐
-│ Camera Attendance│
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│ Attendance Record│
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│ Review & Reports │
-└──────────────────┘
-```
-
-The system keeps the attendance workflow simple for users while giving administrators the tools needed to review and manage records.
+*(The PETER application itself uses Nuxt, Hono, PostgreSQL, Better Auth, and
+Playwright — see [About PETER](#about-peter) above.)*
 
 ---
 
 ## 🚧 Status
 
-**Active development**
-
-PETER is actively developed and continues to receive improvements to its attendance workflows, administration features, testing, and infrastructure.
-
-Current development releases use the `0.x` version range while the system continues to evolve.
+**Live** — this landing page is actively maintained alongside PETER's development.
 
 ---
 
 ## 📄 License
 
-PETER is **proprietary software**.
+This **landing page repository** is licensed under the [MIT License](./LICENSE) —
+feel free to reuse or reference the code/design.
 
-The source code is maintained by its author. Use, modification, deployment, redistribution, and commercial use are subject to the applicable license or agreement.
-
-See the repository's license terms for more information.
+The PETER **application** itself remains proprietary software; source, usage,
+and deployment are governed by a separate agreement with the maintainer. MIT
+licensing here applies only to this landing page, not to PETER's core codebase.
 
 ---
 
