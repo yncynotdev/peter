@@ -26,9 +26,9 @@ const navigation = [
     <UNavigationMenu :items="navigation" class="hidden md:flex" />
 
     <template #right>
-      <UColorModeButton />
+      <UColorModeButton class="hidden sm:inline-flex" />
 
-      <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
+      <UTooltip text="Open on GitHub" :kbds="['meta', 'G']" class="hidden sm:flex">
         <UButton
           color="neutral"
           variant="ghost"
@@ -44,6 +44,7 @@ const navigation = [
         :to="demoUrl"
         target="_blank"
         trailing-icon="i-lucide-external-link"
+        class="hidden md:inline-flex"
       />
     </template>
 

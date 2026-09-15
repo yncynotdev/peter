@@ -37,6 +37,15 @@ const columns: FooterColumn[] = [
           <br />
           PETER
         </p>
+
+        <UButton
+          color="neutral"
+          variant="ghost"
+          to="https://github.com/yncynotdev/peter"
+          target="_blank"
+          icon="i-simple-icons-github"
+          aria-label="GitHub"
+        />
       </template>
     </UFooterColumns>
   </UFooter>
