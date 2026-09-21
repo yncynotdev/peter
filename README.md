@@ -49,15 +49,15 @@ Highlights of the product:
 
 This landing page is built with:
 
-| Technology | Purpose |
-| --- | --- |
-| **Nuxt** | Site framework |
-| **Nuxt UI** | UI components |
-| **TypeScript** | Language |
-| **Cloudflare Pages** | Hosting |
+| Technology           | Purpose        |
+| -------------------- | -------------- |
+| **Nuxt**             | Site framework |
+| **Nuxt UI**          | UI components  |
+| **TypeScript**       | Language       |
+| **Cloudflare Pages** | Hosting        |
 
-*(The PETER application itself uses Nuxt, Hono, PostgreSQL, Better Auth, and
-Playwright — see [About PETER](#about-peter) above.)*
+_(The PETER application itself uses Nuxt, Hono, PostgreSQL, Better Auth, and
+Playwright — see [About PETER](#about-peter) above.)_
 
 ---
 
@@ -87,4 +87,5 @@ codebase or its branding.
 
 <p align="center">
   <sub>© PETER · Attendance Management System</sub>
+  <sub>Special thanks to Rom Jerico Reyes</sub>
 </p>

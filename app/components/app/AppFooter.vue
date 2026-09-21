@@ -35,7 +35,7 @@ const columns: FooterColumn[] = [
         <p class="text-muted text-sm">
           All Rights Reserved. © {{ new Date().getFullYear() }} yncynotdev
           <br />
-          PETER
+          PETER · Made possible with the support of Rom Jerico Reyes
         </p>
 
         <UButton
