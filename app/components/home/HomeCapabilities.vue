@@ -33,7 +33,10 @@ const capabilities = [
     v-reveal
     title="Attendance that feels simple, not intimidating."
     description="PETER helps organizations manage clock-ins, clock-outs, and attendance records while reducing buddy-punching. Face detection is used for attendance verification, and biometric data is not stored."
-    :ui="{ root: 'py-20 sm:py-24', title: 'font-display font-normal tracking-[-0.02em]' }"
+    :ui="{
+      root: 'py-20 sm:py-24 bg-muted/35',
+      title: 'font-display font-normal tracking-[-0.02em]',
+    }"
   >
     <UPageGrid>
       <UPageCard

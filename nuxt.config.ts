@@ -5,8 +5,12 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
 
-  modules: ["@nuxt/ui", "@nuxt/eslint", "@nuxt/image", "@comark/nuxt", "motion-v"],
+  modules: ["@nuxt/ui", "@nuxt/eslint", "@nuxt/image", "@comark/nuxt", "motion-v", "@vueuse/nuxt"],
   css: ["~/assets/css/main.css"],
+
+  colorMode: {
+    preference: "dark",
+  },
 
   // Registers `v-motion` plus every `motionPresets` key as a global directive.
   motionV: {

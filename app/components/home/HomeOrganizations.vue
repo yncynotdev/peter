@@ -13,7 +13,10 @@ const organizations = [
     v-reveal
     title="Organizations Using PETER"
     description="PETER is currently being used by organizations to manage attendance."
-    :ui="{ root: 'py-16 sm:py-20', title: 'font-display font-normal tracking-[-0.02em]' }"
+    :ui="{
+      root: 'py-16 sm:py-20 bg-muted/35',
+      title: 'font-display font-normal tracking-[-0.02em]',
+    }"
   >
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       <UCard

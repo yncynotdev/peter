@@ -25,7 +25,7 @@ const steps = [
     title="How it works"
     description="A simple three-step process for recording attendance."
     :ui="{
-      root: 'py-16 sm:py-20 bg-muted/35',
+      root: 'py-16 sm:py-20',
       title: 'font-display font-normal tracking-[-0.02em]',
     }"
   >
