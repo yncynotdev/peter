@@ -24,6 +24,16 @@ const capabilities = [
       "Clear attendance statuses make it easier for administrators to review and manage records.",
     icon: "i-lucide-badge-check",
   },
+  {
+    title: "File Exports",
+    description: "Generate PDF and Excel reports from attendance records",
+    icon: "i-lucide-file-down",
+  },
+  {
+    title: "Centralized System",
+    description: "Access attendance data from anywhere through a centralized cloud-based system.",
+    icon: "i-lucide-cloud",
+  },
 ];
 </script>
 

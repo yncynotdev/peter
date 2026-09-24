@@ -1,6 +1,14 @@
 <script setup lang="ts">
 const items = ref([
   {
+    date: "September 24, 2026",
+    title: "Attendance Data Export",
+    description:
+      "Download attendance records as PDF or Excel files for easier reporting and record keeping.",
+    thumbnail: "/thumbnail/v0.9.7.png",
+    to: "/changelog/attendance-data-export",
+  },
+  {
     date: "September 14, 2026",
     title: "Attendance Calendar",
     description:
