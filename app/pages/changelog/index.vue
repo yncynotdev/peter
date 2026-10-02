@@ -1,6 +1,14 @@
 <script setup lang="ts">
 const items = ref([
   {
+    date: "September 30, 2026",
+    title: "Maintenance & Refinements",
+    description:
+      "Minor fixes, UI refinements, security improvements, and development workflow updates across PETER.",
+    thumbnail: "/thumbnail/v0.9.8.png",
+    to: "/changelog/maintenance-and-refinements",
+  },
+  {
     date: "September 24, 2026",
     title: "Attendance Data Export",
     description:

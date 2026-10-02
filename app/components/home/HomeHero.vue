@@ -26,7 +26,6 @@ const ui = {
   //  wrapper: "max-w-3xl",
   headline: "font-display text-lg font-normal",
   title: "font-display font-normal tracking-[-0.03em] text-balance sm:text-6xl lg:text-7xl",
-  description: "text-toned",
   links: "gap-3",
 };
 </script>
