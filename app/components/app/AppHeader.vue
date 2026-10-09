@@ -20,7 +20,7 @@ const navigation = [
         </NuxtLink>
       </div>
 
-      <UBadge variant="subtle">v0.9.7</UBadge>
+      <UBadge variant="subtle">v0.9.9</UBadge>
     </template>
 
     <UNavigationMenu :items="navigation" class="hidden md:flex" />

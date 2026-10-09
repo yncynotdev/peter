@@ -1,6 +1,14 @@
 <script setup lang="ts">
 const items = ref([
   {
+    date: "October 09, 2026",
+    title: "Attendance & Realtime Improvements",
+    description:
+      "Improved attendance tracking with clock-out images, working-hours summaries, timezone settings, and real-time updates.",
+    thumbnail: "/thumbnail/v0.9.8.png",
+    to: "/changelog/attendance-and-realtime-improvements",
+  },
+  {
     date: "September 30, 2026",
     title: "Maintenance & Refinements",
     description:

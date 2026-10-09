@@ -18,23 +18,23 @@
     "@comark/nuxt": "^0.7.0",
     "@nuxt/eslint": "^1.17.0",
     "@nuxt/image": "2.1.0",
-    "@nuxt/ui": "^4.10.0",
+    "@nuxt/ui": "^4.11.3",
     "@vueuse/nuxt": "^14.4.0",
     "better-sqlite3": "^13.0.3",
-    "motion-v": "^2.4.2",
-    "nuxt": "^4.5.2",
-    "simple-icons": "^16.28.0",
-    "vue": "^3.5.41",
-    "vue-router": "^5.2.0"
+    "motion-v": "^2.6.0",
+    "nuxt": "^4.6.0",
+    "simple-icons": "^16.34.0",
+    "vue": "^3.5.43",
+    "vue-router": "^5.4.0"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.123",
-    "@iconify-json/simple-icons": "^1.2.95",
+    "@iconify-json/lucide": "^1.2.141",
+    "@iconify-json/simple-icons": "^1.2.99",
     "@types/three": "^0.186.0",
     "oxfmt": "^0.68.0",
-    "oxlint": "^1.83.0",
-    "three": "^0.186.0",
-    "wrangler": "^4.125.0"
+    "oxlint": "^1.87.0",
+    "three": "^0.186.1",
+    "wrangler": "^4.148.0"
   },
   "packageManager": "pnpm@12.5.1+sha512.e3f305bc784a2bc89f5ad3b6138889470fae8d2af5f36b61216ec91c2c3d64089775f9de38aac331044ea40f245cb0d5666392dfdf65824e1907ef6a2c62de5f",
   "pnpm": {
